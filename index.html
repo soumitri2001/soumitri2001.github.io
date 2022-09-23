@@ -133,6 +133,8 @@
             <a href="https://arxiv.org/pdf/2201.10138.pdf" target="_blank">arXiv</a>
             /
             <a href="https://github.com/soumitri2001/SURDS-SSL-OSV" target="_blank">Code</a>
+            /
+            <a href="https://www.youtube.com/watch?v=xc_EVy6O7js" target="_blank">Video</a>
             <p></p>
             <p>
               Offline Signature Verification (OSV) is a fundamental biometric task across various forensic, commercial and legal applications. The underlying task at hand is to carefully model fine-grained features of the signatures to distinguish between genuine and forged ones, which differ only in minute deformities. This makes OSV more challenging compared to other verification problems. In this work, we propose a two-stage deep learning framework that leverages self-supervised representation learning as well as metric learning for writer-independent OSV. First, we train an image reconstruction network using an encoder-decoder architecture that is augmented by a 2D spatial attention mechanism using signature image patches. Next, the trained encoder backbone is fine-tuned with a projector head using a supervised metric learning framework, whose objective is to optimize a novel dual triplet loss by sampling negative samples from both within the same writer class as well as from other writers. The intuition behind this is to ensure that a signature sample lies closer to its positive counterpart compared to negative samples from both intra-writer and cross-writer sets. This results in robust discriminative learning of the embedding space. To the best of our knowledge, this is the first work of using self-supervised learning frameworks for OSV. The proposed two-stage framework has been evaluated on two publicly available offline signature datasets and compared with various state-of-the-art methods. It is noted that the proposed method provided promising results outperforming several existing pieces of work.          </td>
@@ -155,9 +157,11 @@
             <em>International Conference on Machine Intelligence and Signal Processing (<b>MISP</b>)</em>, 2022
             <br><font color="red"><strong>(Best Paper Award)</strong></font>
             <br><br>
-            <a href="assets/DMTNet_MISP22.pdf" target="_blank">Paper</a>
+            <a href="assets/DMTNet_MISP22.pdf" target="_blank">Preprint</a>
             /
             <a href="https://github.com/soumitri2001/DMTNet-CRCH" target="_blank">Code</a>
+            /
+            <a href="assets/DMTNet_PPT.pdf" target="_blank">Slides</a>
             <p></p>
             <p>
               Colorectal cancer is one of the most common types of cancer worldwide and the leading cause of death due to cancer. As such, an early detection and diagnosis is of paramount importance, which is however, limited due to insufficient medical practitioners available for large-scale histopathological screening. This demands for a reliable computer-aided framework that can automatically analyse histopathological slide images and assist pathologists in quick decision-making. To this end, we propose a novel deep learning framework that combines supervised learning with self-supervision for robust learning of histopathological features from colorectal tissue images. Specifically, our framework comprises a multitask training pipeline using deep metric learning that learns the embedding space using triplet loss, which is augmented using a self-supervised image reconstruction module that enhances learning of pixel-level texture features. The downstream classification is done by extracting features using the pre-trained encoder and feeding them into a support vector machine classifier. We perform qualitative and quantitative analysis on a publicly available colorectal cancer histopathology dataset, as well as compare the proposed framework against some state-of-the-art works, where the model is found to outperform several existing works in literature.          </td>
