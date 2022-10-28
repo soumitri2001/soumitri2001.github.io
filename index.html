@@ -94,6 +94,32 @@
 
 <!--  -->
 
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='ideal'><img src='assets/ideal.png' width="180" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
+        <img src='assets/ideal.png' width="180">          
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arxiv.org/abs/2210.15075" target="_blank">
+        <papertitle>IDEAL: Improved DEnse locAL Contrastive Learning for Semi-Supervised Medical Image Segmentation
+        </papertitle>
+      </a>
+      <br><br>Hritam Basak*, <strong>Soumitri Chattopadhyay</strong>*, Rohit Kundu*, Sayan Nag*, Rammohan Mallipeddi<br>
+      <em>arXiv, 2022</em> (* denotes equal contribution)
+      <br><br>
+      <a href="https://arxiv.org/pdf/2210.15075.pdf" target="_blank">arXiv</a>
+      /
+      <a href="#">Code</a>
+      <p></p>
+      <p>
+        Due to the scarcity of labeled data, Contrastive Self-Supervised Learning (SSL) frameworks have lately shown great potential in several medical image analysis tasks. However, the existing contrastive mechanisms are sub-optimal for dense pixel-level segmentation tasks due to their inability to mine local features. To this end, we extend the concept of metric learning to the segmentation task, using a dense (dis)similarity learning for pre-training a deep encoder network, and employing a semi-supervised paradigm to fine-tune for the downstream task. Specifically, we propose a simple convolutional projection head for obtaining dense pixel-level features, and a new contrastive loss to utilize these dense projections thereby improving the local representations. A bidirectional consistency regularization mechanism involving two-stream model training is devised for the downstream task. Upon comparison, our IDEAL method outperforms the SoTA methods by fair margins on cardiac MRI segmentation.    </td>
+  </tr>   
+</tbody></table>      
+
+<!--  -->
+
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -102,7 +128,7 @@
               <img src='assets/icip22.png' width="180">          
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2202.13078" target="_blank">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897562" target="_blank">
               <papertitle>SWIS: Self-Supervised Representation Learning For Writer Independent Offline Signature Verification
               </papertitle>
             </a>
@@ -112,6 +138,8 @@
             <a href="https://arxiv.org/pdf/2202.13078.pdf" target="_blank">arXiv</a>
             /
             <a href="https://github.com/soumitri2001/SWIS-Self-Supervised-Learning-for-Offline-Signature-Verification" target="_blank">Code</a>
+            /
+            <a href="assets/SWIS_PPT.pdf" target="_blank">Slides</a>
             <p></p>
             <p>
               Writer independent offline signature verification is one of the most challenging tasks in pattern recognition as there is often a scarcity of training data. To handle such data scarcity problem, in this paper, we propose a novel self-supervised learning (SSL) framework for writer independent offline signature verification. To our knowledge, this is the first attempt to utilize self-supervised setting for the signature verification task. The objective of self-supervised representation learning from the signature images is achieved by minimizing the cross-covariance between two random variables belonging to different feature directions and ensuring a positive cross-covariance between the random variables denoting the same feature direction. This ensures that the features are decorrelated linearly and the redundant information is discarded. Through experimental results on different data sets, we obtained encouraging results.              </p>
@@ -186,19 +214,19 @@
               <img src='assets/mtap.png' width="180">          
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://github.com/soumitri2001/Wrapper-Filter-Speech-Emotion-Recognition" target="_blank">
+            <a href="https://link.springer.com/article/10.1007/s11042-022-14052-y" target="_blank">
               <papertitle>A Hybrid Deep Feature Selection Framework for Emotion Recognition from Human Speeches
               </papertitle>
             </a>
             <br><br>Aritra Marik, <strong>Soumitri Chattopadhyay</strong>, Pawan Kumar Singh<br>
-            <em>Multimedia Tools and Applications, Springer</em>, 2022 <b>(Accepted)</b>
+            <em>Multimedia Tools and Applications, Springer</em>, 2022 (<b>IF: 2.577</b>)
             <br><br>
-            <a href="https://github.com/soumitri2001/Wrapper-Filter-Speech-Emotion-Recognition" target="_blank">Paper</a>
+            <a href="https://link.springer.com/article/10.1007/s11042-022-14052-y" target="_blank">Paper</a>
             /
             <a href="https://github.com/soumitri2001/Wrapper-Filter-Speech-Emotion-Recognition" target="_blank">Code</a>
             <p></p>
             <p>
-              Speech Emotion Recognition (SER) is an active area of signal processing research that aims at identifying emotional states from audio speech signals. Applications of SER range from psychological diagnosis to human-computer interaction and as such, a robust framework is needed for accurate classification. \hlcyan{To this end, we propose a two-stage hybrid deep feature selection (HDFS) framework that combines deep learning with automated feature engineering for emotion recognition from human speeches, which shines both in terms of accuracy and computational efficiency. Our pipeline extracts self-learned features using a customized Wide-ResNet-50-2 deep learning model from mel-spectrograms of raw audio signals, whose dimensionality is reduced using a hybrid deep feature selection algorithm that comprises a fuzzy entropy and similarity-based feature ranking method, followed by Whale optimization algorithm, which is a popular meta-heuristic optimization algorithm in literature. A k-nearest neighbor classifier is used to classify the optimized feature subset into the respective emotion classes. The proposed pipeline is evaluated on three publicly available SER datasets using a 5-fold cross-validation scheme, where it is found to outperform several state-of-the-art existing works in literature by significant margins, thus justifying the superiority and reliability of the proposed research.</tr>   
+              Speech Emotion Recognition (SER) is an active area of signal processing research that aims at identifying emotional states from audio speech signals. Applications of SER range from psychological diagnosis to human-computer interaction and as such, a robust framework is needed for accurate classification. To this end, we propose a two-stage hybrid deep feature selection (HDFS) framework that combines deep learning with automated feature engineering for emotion recognition from human speeches, which shines both in terms of accuracy and computational efficiency. Our pipeline extracts self-learned features using a customized Wide-ResNet-50-2 deep learning model from mel-spectrograms of raw audio signals, whose dimensionality is reduced using a hybrid deep feature selection algorithm that comprises a fuzzy entropy and similarity-based feature ranking method, followed by Whale optimization algorithm, which is a popular meta-heuristic optimization algorithm in literature. A k-nearest neighbor classifier is used to classify the optimized feature subset into the respective emotion classes. The proposed pipeline is evaluated on three publicly available SER datasets using a 5-fold cross-validation scheme, where it is found to outperform several state-of-the-art existing works in literature by significant margins, thus justifying the superiority and reliability of the proposed research.</tr>   
       </tbody></table>
 
 <!--  -->
