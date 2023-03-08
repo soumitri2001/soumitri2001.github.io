@@ -96,3 +96,7 @@
     background-color: #616661;
     color: white;
   }
+
+  a.isDisabled {
+    pointer-events: none;
+  }
