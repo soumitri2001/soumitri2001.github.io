@@ -90,9 +90,28 @@ strong {
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
 }
+
+conf {
+  margin-top: 1.0em;
+  padding-top: 1.0em;
+	padding-bottom: 0.1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: 540
+}
+
+/* h1, h2, h3 {
+	color: #527bbd;
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+} */
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;

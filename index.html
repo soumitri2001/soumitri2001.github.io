@@ -131,16 +131,16 @@
         <img src='assets/cvpr23.png' width="180">          
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="" target="" class="isDisabled">
+      <a href="https://arxiv.org/abs/2303.13779" target="_blank">
         <papertitle>Exploiting Unlabelled Photos for Stronger Fine-Grained SBIR
         </papertitle>
       </a>
       <br><br>Aneeshan Sain, Ayan Kumar Bhunia, Subhadeep Koley, Pinaki Nath Chowdhury, <strong>Soumitri Chattopadhyay</strong>, Tao Xiang, Yi-Zhe Song<br>
-      <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023</em>
+      <conf><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition ( <b>CVPR</b> ), 2023</em></conf>
       <br><br>
-      <a href="" target="" class="isDisabled">(Preprint coming soon)</a>
-      <!-- /
-      <a href="#">Code</a> -->
+      <a href="https://arxiv.org/pdf/2303.13779.pdf" target="_blank">arXiv</a>
+      /
+      <a href="https://aneeshan95.github.io/Sketch_PVT/" target="_blank">Project Page</a>
       <p></p>
       <p>
         This paper advances the fine-grained sketch-based image retrieval (FG-SBIR) literature by putting forward a strong baseline that overshoots prior state-of-the art by ~11%. This is not via complicated design though, but by addressing two critical issues facing the community (i) the gold standard triplet loss does not enforce holistic latent space geometry, and (ii) there are never enough sketches to train a high accuracy model. For the former, we propose a simple modification to the standard triplet loss, that explicitly enforces separation amongst photos/sketch instances. For the latter, we put forward a novel knowledge distillation module can leverage photo data for model training. Both modules are then plugged into a novel plug-n-playable training paradigm that allows for more stable training. More specifically, for (i) we employ an intra-modal triplet loss amongst sketches to bring sketches of the same instance closer from others, and one more amongst photos to push away different photo instances while bringing closer a structurally augmented version of the same photo (offering a gain of 4-6%). To tackle (ii), we first pre-train a teacher on the large set of unlabelled photos over the aforementioned intra-modal photo triplet loss. Then we distill the contextual similarity present amongst the instances in the teacher's embedding space to that in the student's embedding space, by matching the distribution over inter-feature distances of respective samples in both embedding spaces (delivering a further gain of 4-5%). Apart from outperforming prior arts significantly, our model also yields satisfactory results on generalising to new classes.    </td>
@@ -162,14 +162,14 @@
         </papertitle>
       </a>
       <br><br><strong>Soumitri Chattopadhyay</strong>*, Soham Ganguly*, Sreejit Chaudhury*, Sayan Nag*, Samiran Chattopadhyay<br>
-      <em>arXiv, 2023</em> (* denotes equal contribution)
+      <conf><em>arXiv, 2023</em></conf> (* denotes equal contribution)
       <br><br>
       <a href="https://arxiv.org/pdf/2303.05556.pdf" target="_blank">Preprint</a>
       <!-- /
       <a href="#">Code</a> -->
       <p></p>
       <p>
-        Privacy and annotation bottlenecks are two major issues that profoundly affect the practicality of machine learning-based medical image analysis. Although significant progress has been made in these areas, these issues are not yet fully resolved. In this paper, we seek to tackle these concerns head-on and systematically explore the applicability of non-contrastive self-supervised learning (SSL) algorithms under federated learning (FL) simulations for medical image analysis. We conduct thorough experimentation of recently proposed state-of-the-art non-contrastive frameworks under standard FL setups. With the SoTA Contrastive Learning algorithm, SimCLR as our comparative baseline, we benchmark the performances of our 4 chosen non-contrastive algorithms under non-i.i.d. data conditions and with a varying number of clients. We present a holistic evaluation of these techniques on 6 standardized medical imaging datasets. We further analyse different trends inferred from the findings of our research, with the aim to find directions for further research based on ours. To the best of our knowledge, ours is the first to perform such a thorough analysis of federated self-supervised learning for medical imaging. All of our source code will be made public upon acceptance of the paper. </td>
+        Privacy and annotation bottlenecks are two major issues that profoundly affect the practicality of machine learning-based medical image analysis. Although significant progress has been made in these areas, these issues are not yet fully resolved. In this paper, we seek to tackle these concerns head-on and systematically explore the applicability of non-contrastive self-supervised learning (SSL) algorithms under federated learning (FL) simulations for medical image analysis. We conduct thorough experimentation of recently proposed state-of-the-art non-contrastive frameworks under standard FL setups. With the SoTA Contrastive Learning algorithm, SimCLR as our comparative baseline, we benchmark the performances of our 4 chosen non-contrastive algorithms under non-i.i.d. data conditions and with a varying number of clients. We present a holistic evaluation of these techniques on 6 standardized medical imaging datasets. We further analyse different trends inferred from the findings of our research, with the aim to find directions for further research based on ours. To the best of our knowledge, ours is the first to perform such a thorough analysis of federated self-supervised learning for medical imaging. </td>
   </tr>   
 </tbody></table>  
 
@@ -188,7 +188,7 @@
         </papertitle>
       </a>
       <br><br><strong>Soumitri Chattopadhyay</strong>, Soham Ganguly*, Sreejit Chaudhury*, Sayan Nag*, Samiran Chattopadhyay<br>
-      <em>arXiv, 2023</em> (* denotes equal contribution)
+      <conf><em>arXiv, 2023</em></conf> (* denotes equal contribution)
       <br><br>
       <a href="https://arxiv.org/pdf/2303.02245.pdf" target="_blank">Preprint</a>
       <!-- /
@@ -214,11 +214,13 @@
         </papertitle>
       </a>
       <br><br>Hritam Basak, <strong>Soumitri Chattopadhyay</strong>*, Rohit Kundu*, Sayan Nag*, Rammohan Mallipeddi<br>
-      <em>IEEE Intl. Conf. on Acoustics, Speech and Signal Processing (<b>ICASSP</b>), 2023</em>
+      <conf><em>IEEE Intl. Conf. on Acoustics, Speech and Signal Processing ( <b>ICASSP</b> ), 2023</em></conf>
       <br><br>
-      <a href="https://arxiv.org/pdf/2210.15075.pdf" target="_blank">Preprint</a>
-      <!-- /
-      <a href="#">Code</a> -->
+      <a href="https://arxiv.org/pdf/2210.15075.pdf" target="_blank">arXiv</a>
+      /
+      <a href="https://github.com/Rohit-Kundu/IDEAL-ICASSP23">Code</a>
+      /
+      <a href="https://rohit-kundu.github.io/IDEAL-ICASSP23/" target="_blank">Project Page</a>
       <p></p>
       <p>
         Due to the scarcity of labeled data, Contrastive Self-Supervised Learning (SSL) frameworks have lately shown great potential in several medical image analysis tasks. However, the existing contrastive mechanisms are sub-optimal for dense pixel-level segmentation tasks due to their inability to mine local features. To this end, we extend the concept of metric learning to the segmentation task, using a dense (dis)similarity learning for pre-training a deep encoder network, and employing a semi-supervised paradigm to fine-tune for the downstream task. Specifically, we propose a simple convolutional projection head for obtaining dense pixel-level features, and a new contrastive loss to utilize these dense projections thereby improving the local representations. A bidirectional consistency regularization mechanism involving two-stream model training is devised for the downstream task. Upon comparison, our IDEAL method outperforms the SoTA methods by fair margins on cardiac MRI segmentation.    </td>
@@ -250,7 +252,7 @@
               </papertitle>
             </a>
             <br><br>Siladittya Manna, <strong>Soumitri Chattopadhyay</strong>, Saumik Bhattacharya, Umapada Pal<br>
-            <em>IEEE International Conference on Image Processing (<b>ICIP</b>)</em>, 2022 <font color="red"><strong>(Oral presentation)</strong></font>
+            <conf><em>IEEE International Conference on Image Processing ( <b>ICIP</b> ), 2022</em></conf>  <font color="red"><strong>(Oral presentation)</strong></font>
             <br><br>
             <a href="https://arxiv.org/abs/2202.13078" target="_blank">arXiv</a>
             /
@@ -279,7 +281,7 @@
               </papertitle>
             </a>
             <br><br><strong>Soumitri Chattopadhyay</strong>, Siladittya Manna, Saumik Bhattacharya, Umapada Pal<br>
-            <em>International Conference on Pattern Recognition (<b>ICPR</b>)</em>, 2022
+            <conf><em>International Conference on Pattern Recognition ( <b>ICPR</b> ), 2022</em></conf>
             <br><br>
             <a href="https://arxiv.org/abs/2201.10138" target="_blank">arXiv</a>
             /
@@ -307,7 +309,7 @@
               </papertitle>
             </a>
             <br><br>Aritra Marik, <strong>Soumitri Chattopadhyay</strong>, Pawan Kumar Singh<br>
-            <em>International Conference on Machine Intelligence and Signal Processing (<b>MISP</b>)</em>, 2022
+            <conf><em>International Conference on Machine Intelligence and Signal Processing ( <b>MISP</b> ), 2022</em></conf>
             <br><font color="red"><strong>(Best Paper Award)</strong></font>
             <br><br>
             <a href="assets/DMTNet_MISP22.pdf" target="_blank">PDF</a>
@@ -336,7 +338,7 @@
               </papertitle>
             </a>
             <br><br>Aritra Marik, <strong>Soumitri Chattopadhyay</strong>, Pawan Kumar Singh<br>
-            <em>Multimedia Tools and Applications, Springer</em>, 2022 (<b>IF: 2.577</b>)
+            <conf><em>Multimedia Tools and Applications, Springer, 2022</em></conf> (<b>IF: 2.577</b>)
             <br><br>
             <a href="https://link.springer.com/article/10.1007/s11042-022-14052-y" target="_blank">Paper</a>
             /
@@ -372,7 +374,7 @@
               </papertitle>
             </a>
             <br><br><strong>Soumitri Chattopadhyay</strong>, Rohit Kundu, Pawan Kumar Singh, Seyedali Mirjalili, Ram Sarkar<br>
-            <em>International Journal of Intelligent Systems, Wiley</em>, 2021 (<b>IF: 8.993</b>)
+            <conf><em>International Journal of Intelligent Systems, Wiley, 2021</em></conf> (<b>IF: 8.993</b>)
             <br><br>
             <a href="https://dx.doi.org/10.1002/int.22703" target="_blank">Paper</a>
             /
