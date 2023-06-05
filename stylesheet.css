@@ -92,6 +92,7 @@ strong {
 heading {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
+  /* border-bottom: 1px solid #aaaaaa; */
 }
 
 conf {
