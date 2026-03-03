@@ -175,13 +175,13 @@
   <tr>
     <td style="padding:5px;width:25%;vertical-align:middle">
       <div class="one">
-        <div class="two" id='ummsegfm'><img src='assets/ummsegfm.png' width="220" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
-        <img src='assets/ummsegfm.png' width="220">          
+        <div class="two" id='ummsegfm'><img src='assets/uassc.png' width="220" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
+        <img src='assets/uassc.png' width="220">          
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
       <a href="#">
         <papertitle>
-          Unpaired Multimodal Medical Image Segmentation via Cross-Modal Prompt-driven 3D Foundational Models
+          Uncertainty-Aware Spatio-Semantic Contextual Prompts for Multimodal Medical Segmentation
         </papertitle>
       </a>
       <br><br><strong>Soumitri Chattopadhyay</strong>, Basar Demir, Marc Niethammer<br>
@@ -191,9 +191,14 @@
       <!-- <a href="https://github.com/soumitri2001/GCPL" target="_blank">Code</a> /-->
       <p></p>
       <p>
-        We address the practical challenge of cross-modal 3D medical image segmentation under extreme annotation constraints—assuming only a handful of labeled examples in a single source modality and none in the target modality. The support and query volumes are unpaired and may originate from distinct patients or imaging protocols. To tackle this, we propose a training-free, plug-and-play framework that leverages general-purpose 3D foundation models for segmentation. Our approach explores two complementary strategies for cross-modal prompting: (i) deformable spatial alignment via off-the-shelf multimodal registration, and (ii) semantic-aware feature similarity computation between cross-modal support-query volumes, transformed into soft prompts in logit space. These dense or sparse prompts condition frozen foundational segmentation backbones (such as SAM-Med3D), requiring no additional training or fine-tuning. We further extend the framework with single-image test-time adaptation, refining prompts in a self-supervised manner to improve generalization.
-        We validate our proposed methods across three publicly available 3D abdominal organ segmentation datasets encompassing both CT and MR modalities, and by suitably designing cross-modal settings, we show that our methods have potential and perform competitively compared to oracle upper bounds.
-        </p>
+        The vast heterogeneity of medical imaging demands developing universal and modality-transferable segmentation models that can ideally work in low-data regimes. 
+        Although few-shot cross-domain, in-context learning, and promptable foundational models have emerged as promising data-efficient domain-agnostic solutions, they are all limited either in dimensionality (2D only), 
+        scalability (interactive prompting being too slow and iterative), or require re-training for each new task, limiting their general applicability. In this work, we address these limitations and propose a novel 
+        framework that harnesses the representational capabilities of foundational models to generate spatial and semantic contextual priors that holistically describe the target structure to be segmented. 
+        We also propose a confidence-weighted dynamic gating scheme to fuse these context maps into a single dense prompt, and re-purpose a frozen foundational segmentation model, SAM-Med3D, 
+        to predict segmentations using this fused representation instead of sparse points. Our framework is modality-agnostic, training-free, scalable, and enables rapid and robust universal segmentation. 
+        We validate our approach on two abdominal CT and MRI datasets under cross-modal and intra-modal settings, and show it outperforms existing state-of-the-art methods by significant margins. 
+      </p>
       </tr>   
 </tbody></table>
 
