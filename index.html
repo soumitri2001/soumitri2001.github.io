@@ -58,13 +58,13 @@
                 <a href="https://github.com/soumitri2001/" target="_blank">GitHub</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/soumitri-chattopadhyay/" target="_blank">LinkedIn</a> 
               </p>
-              <p>
+              <!-- <p>
                 <a class="button" style="color: rgb(255, 165, 0); --darkreader-inline-color:#b47422;" data-darkreader-inline-color=""><strong style="font-size:12px">Note</strong></a>
                 <conf style="color:rgb(144, 12, 12); font-size:15px">I am actively looking for a research internship position for Summer/Fall 2026. Please feel free to contact me if you have an opening!</conf>
-              </p>
+              </p> -->
             </td>
             <td style="padding:2.5%;width:70%;max-width:70%">
-            <img style="width:100%;max-width:100%" alt="profile photo" src="assets/Soumitri-PORTRAIT.jpg" class="hoverZoomLink">
+            <img style="width:100%;max-width:100%" alt="profile photo" src="assets/Soumitri-PORTRAIT.png" class="hoverZoomLink">
             </td>
           </tr>
         </tbody></table>
@@ -110,6 +110,12 @@
             <div style="border-bottom: 1px solid #aaaaaa;"><heading>News</heading></div>
             <div style="width:100%;height:200px;overflow-y:scroll">
             <ul id="news" >
+              <li><sup>
+                <font color="red"><strong>New!!</strong></font>
+              </sup>[Mar '26]&nbsp; <b><em>One</em></b> paper accepted at <b>CV4Clinical @ CVPR 2026</b> as an <b>Oral</b> presentation!</li>
+              <li><sup>
+                <font color="red"><strong>New!!</strong></font>
+              </sup>[Mar '26]&nbsp; <b><em>One</em></b> paper accepted at <b>ISBI 2026</b> as an <b>Oral</b> presentation!</li>
               <li><sup>
                 <font color="red"><strong>New!!</strong></font>
               </sup>[Jan '26]&nbsp; <b><em>One</em></b> paper accepted at <b>ISBI 2026</b> as an <b>Oral</b> presentation!</li>
@@ -259,37 +265,6 @@
 <!-- </tbody></table> -->
 
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-    <td style="padding:5px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='progression'><img src='assets/progression.png' width="220" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
-        <img src='assets/progression.png' width="220">          
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://arxiv.org/abs/2503.16842" target="_blank">
-        <papertitle>
-          How Useful Are Vision Foundation Model Features for Out-of-the-Box Disease Progression Prediction?
-        </papertitle>
-      </a>
-      <br><br>Basar Demir, <strong>Soumitri Chattopadhyay</strong>, Thomas Hastings Greer, Boqi Chen, Marc Niethammer<br>
-      <p></p>
-      <p>
-        Medical vision foundation models have shown strong performance across a range of tasks, including medical image segmentation and registration. 
-        In this work, we investigate their potential for disease progression prediction, a clinically important and challenging problem. 
-        We evaluate intermediate feature representations from pre-trained segmentation and registration models using a simple linear probe, without fine-tuning. 
-        We study two distinct clinical domains: knee osteoarthritis on the Osteoarthritis Initiative (OAI) dataset and Alzheimer's disease on the ADNI brain MRI dataset. 
-        We hypothesize that segmentation models, trained to delineate anatomical structures, primarily capture structural information, whereas registration models,
-         trained to align images over time, inherently encode temporal change. Our results support this hypothesis across both domains. 
-         On OAI, registration features are robust to spatial misalignment and outperform segmentation features on unaligned inputs, while segmentation features 
-         require careful alignment to achieve competitive performance. On ADNI, registration features derived from baseline-to-follow-up alignment achieve the best 
-         results on longitudinal tasks, including long-horizon conversion prediction. Across both datasets, SAM-Med3D provides the strongest segmentation features, 
-         while registration features from baseline-to-current alignment best capture longitudinal disease progression. 
-         These findings hold across two anatomical regions and disease domains, highlighting the practical value of registration foundation model features for clinical progression prediction. 
-        </p>
-      </tr>   
-</tbody></table>
-
 <!--  -->
 <!--  -->
 
@@ -310,6 +285,38 @@
     <heading><b>2026</b></heading>
     </td>
   </tr>
+</tbody></table>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:5px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='progression'><img src='assets/progression.png' width="220" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
+        <img src='assets/progression.png' width="220">          
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arxiv.org/abs/2503.16842" target="_blank">
+        <papertitle>
+          How Useful Are Vision Foundation Model Features for Out-of-the-Box Disease Progression Prediction?
+        </papertitle>
+      </a>
+      <br><br>Basar Demir, <strong>Soumitri Chattopadhyay</strong>, Thomas Hastings Greer, Boqi Chen, Marc Niethammer<br>
+      <conf><em><b>CV4Clinical</b> Workshop @ <b>CVPR</b> 2026</b> </em></conf> <font color="red"><strong>(Oral presentation)</strong></font>
+      <p></p>
+      <p>
+        Medical vision foundation models have shown strong performance across a range of tasks, including medical image segmentation and registration. 
+        In this work, we investigate their potential for disease progression prediction, a clinically important and challenging problem. 
+        We evaluate intermediate feature representations from pre-trained segmentation and registration models using a simple linear probe, without fine-tuning. 
+        We study two distinct clinical domains: knee osteoarthritis on the Osteoarthritis Initiative (OAI) dataset and Alzheimer's disease on the ADNI brain MRI dataset. 
+        We hypothesize that segmentation models, trained to delineate anatomical structures, primarily capture structural information, whereas registration models,
+         trained to align images over time, inherently encode temporal change. Our results support this hypothesis across both domains. 
+         On OAI, registration features are robust to spatial misalignment and outperform segmentation features on unaligned inputs, while segmentation features 
+         require careful alignment to achieve competitive performance. On ADNI, registration features derived from baseline-to-follow-up alignment achieve the best 
+         results on longitudinal tasks, including long-horizon conversion prediction. Across both datasets, SAM-Med3D provides the strongest segmentation features, 
+         while registration features from baseline-to-current alignment best capture longitudinal disease progression. 
+         These findings hold across two anatomical regions and disease domains, highlighting the practical value of registration foundation model features for clinical progression prediction. 
+        </p>
+      </tr>   
 </tbody></table>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -532,7 +539,7 @@
         </papertitle>
       </a>
       <br><br>Mayukh Bhattacharyya*, <strong>Soumitri Chattopadhyay</strong>*, Sayan Nag*<br>
-      <conf><em><b>CVPR</b> 2023 Workshop -- Efficient Deep Learning for Computer Vision</em></conf> <font color="red"><strong>(Oral presentation)</strong></font>
+      <conf><em><b>Efficient Deep Learning for Computer Vision</b> Workshop @ <b>CVPR</b> 2023</em></conf> <font color="red"><strong>(Oral presentation)</strong></font>
       <br><br>
       <a href="https://openaccess.thecvf.com/content/CVPR2023W/ECV/papers/Bhattacharyya_DeCAtt_Efficient_Vision_Transformers_With_Decorrelated_Attention_Heads_CVPRW_2023_paper.pdf" target="_blank">Paper</a>
       /
