@@ -112,6 +112,9 @@
             <ul id="news" >
               <li><sup>
                 <font color="red"><strong>New!!</strong></font>
+              </sup>[Oct '26]&nbsp; <b><em>One</em></b> paper <u>accepted</u> at <b>WACV 2027</b>!</li>
+              <li><sup>
+                <font color="red"><strong>New!!</strong></font>
               </sup>[Jun '26]&nbsp; Our paper on disease progression prediction won the <b><em>Best Paper Award</em></b> at CV4Clinic Workshop @ CVPR 2026!</li>
               <li><sup>
                 <font color="red"><strong>New!!</strong></font>
@@ -183,25 +186,7 @@
 
 <!--  -->
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-    <td style="padding:5px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='unimedmics'><img src='assets/unimedmics.png' width="240" height="120" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
-        <img src='assets/unimedmics.png' width="240" height="120">          
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="#" target="_blank">
-        <papertitle>
-          UniMedMICS: Generalizing Training-free Universal Multimodal In-Context 3D Medical Image Segmentation
-        </papertitle>
-      </a>
-      <br><br><strong>Soumitri Chattopadhyay</strong>, Yinzhu Jin, Basar Demir, Marc Niethammer<br>
-      <p></p>
-      <p> <font color="red"><strong></strong>Under review. Details coming soon!</font>
-      </p>
-      </tr>   
-</tbody></table>
+
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
   <tr>
@@ -308,18 +293,55 @@
   <tr>
     <td style="padding:5px;width:25%;vertical-align:middle">
       <div class="one">
+        <div class="two" id='unimedmics'><img src='assets/unimedmics.png' width="240" height="120" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
+        <img src='assets/unimedmics.png' width="240" height="120">          
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="#" target="_blank">
+        <papertitle>
+          UniMedMICS: Generalizing Training-free Universal Multimodal In-Context 3D Medical Image Segmentation
+        </papertitle>
+      </a>
+      <br><br><strong>Soumitri Chattopadhyay</strong>, Yinzhu Jin, Basar Demir, Marc Niethammer<br>
+      <conf><em><b>WACV 2027</b> </em></conf> <font color="red"><strong>(accepted)</strong></font>
+      <br><br>
+      <a href="https://github.com/ucsdbiag/UniMedMICS" target="_blank">Code</a>
+      <p>
+        In-context segmentation promises to segment novel structures from a single annotated exemplar, 
+        but existing methods remain brittle for 3D medical volumes, especially under cross-domain and cross-modal shifts. 
+        We introduce UniMedMICS, a training-free framework for universal multimodal in-context 3D medical image segmentation. 
+        Our key idea is to disentangle contextual prior generation from final mask prediction: instead of directly transferring 
+        support-query correspondences into a segmentation output, UniMedMICS first aggregates complementary context cues and then converts 
+        them into dense prompts for an off-the-shelf interactive segmentation model. Specifically, we combine structural priors from test-time 
+        optimized registration, domain-invariant semantic correspondences from localized feature matching, and anatomy-aware global priors 
+        from vision-language and spatial context models. To improve robustness under severe distribution shift, we further introduce a 
+        lightweight quality-control mechanism that scores and filters unreliable context branches before fusion. The resulting fused context 
+        is transformed into multi-view positive and negative scribbles and bounding-box prompts for full-resolution 3D inference with nnInteractive. 
+        Across seven datasets spanning CT, MRI, abdominal, cardiac, and pelvic anatomies, UniMedMICS achieves state-of-the-art performance on intra-dataset, 
+        cross-domain, and cross-modal in-context segmentation, including challenging CT-to-and-from-MRI transfer settings. Our results establish 
+        UniMedMICS as a practical and scalable recipe for annotation-efficient 3D medical segmentation.
+      </p>
+      </tr>   
+</tbody></table>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:5px;width:25%;vertical-align:middle">
+      <div class="one">
         <div class="two" id='ummsegfm'><img src='assets/miccai26.png' width="240" height="120" style="box-shadow: rgb(136, 136, 136) 3px 3px 6px;"></div>
         <img src='assets/miccai26.png' width="240" height="120">          
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="assets/uncertainty_aware_spatio_semantic_contextual_prompts_miccai26_preprint.pdf" target="_blank">
+      <a href="https://link.springer.com/chapter/10.1007/978-3-032-38085-2_55" target="_blank">
         <papertitle>
           Uncertainty-Aware Spatio-Semantic Contextual Prompts for Multimodal Medical Segmentation
         </papertitle>
       </a>
       <br><br><strong>Soumitri Chattopadhyay</strong>, Basar Demir, Marc Niethammer<br>
       <conf><em><b>MICCAI 2026</b> </em></conf> <font color="red"><strong>(early accepted, top-9%)</strong></font>
-      <p></p>
+      <a href="https://papers.miccai.org/miccai-2026/1102-Paper0892.html" target="_blank">Paper</a>
+      /
+      <a href="https://github.com/ucsdbiag/SpatioSemanticMedMICS" target="_blank">Code</a>
       <p>
         The vast heterogeneity of medical imaging demands developing universal and modality-transferable segmentation models that can ideally work in low-data regimes. 
         Although few-shot cross-domain, in-context learning, and promptable foundational models have emerged as promising data-efficient domain-agnostic solutions, they are all limited either in dimensionality (2D only), 
